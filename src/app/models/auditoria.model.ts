@@ -2,8 +2,8 @@
 
 import { Expose } from "class-transformer";
 import { Solicitacao } from "./solicitacao.model";
-import { Model } from "./Model";
 import { TrilhaAuditoria } from "./trilha-auditoria.model";
+import { Model } from "./model";
 
  
  
