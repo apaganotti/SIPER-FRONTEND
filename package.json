@@ -18,6 +18,10 @@
     "@angular/platform-browser": "~12.0.2",
     "@angular/platform-browser-dynamic": "~12.0.2",
     "@angular/router": "~12.0.2",
+    "angular12-crud": "file:",
+    "class-transformer": "^0.5.1",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
