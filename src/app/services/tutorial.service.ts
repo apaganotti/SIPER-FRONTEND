@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
+import { Auditoria } from '../models/auditoria.model';
 
 const baseUrl = 'http://localhost:8080/api/tutorials';
 
@@ -39,4 +40,10 @@ export class TutorialService {
   findByTitle(title: any): Observable<Tutorial[]> {
     return this.http.get<Tutorial[]>(`${baseUrl}?title=${title}`);
   }
+//////////////////////////// CRIADO PARA TESTES //////////////////////////////
+ 
+public getUsers(): Observable<Auditoria[]> {
+  return this.http.get<Auditoria[]>('https://my.api.mockaroo.com/users.json?key=c56db310'); // Substitua com a URL correta
+}
+
 }
